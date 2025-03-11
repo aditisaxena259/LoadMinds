@@ -1,7 +1,35 @@
 # 📝 TaskFlow - Full-Stack Task Management App  
 TaskFlow is a **minimal yet powerful** task management application built with **React (Frontend)** and **Flask (Backend)**.  
 
- <!-- Replace with an actual screenshot if available -->
+### 📌 Landing Page  
+![Task LandPage](frontend/public/dashboard.png)
+
+### 📌 Dashboard
+![Task LandPage](frontend/public/dash.png)
+
+### 📌 Creating TaskList 
+![Task LandPage](frontend/public/dash2.png)
+
+### 📌 Tasks Done 
+![Task Taskdone](frontend/public/dash3.png)
+
+### 📌 Search Action  
+![Task Search](frontend/public/dash4.png)
+
+### 📌 Task Not Found 
+![Task Notfound](frontend/public/dash5.png)
+
+### 📌 Task Landing Page  
+![Task LandPage](frontend/public/dash6.png)
+
+### 📌 Task Already Exists 
+![Task LandPage](frontend/public/dash7.png)
+
+### 📌 Quick Notes
+![Task QuickNotes](frontend/public/dash8.png)
+
+### 📌 Real Time Updation of Quick Notes   
+![Task QuickNotes1](frontend/public/dash9.png)
 
 ---
 
