@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { CheckCircle, Trash2, PlusCircle, Search, Menu, ChevronRight, MoreHorizontal } from "lucide-react";
 import QuickNotes from "./QuickNotes"
-import "./Dashboard.css"; // Make sure to save the CSS as notion-style.css
+import "./Dashboard.css"; 
 
 const API_URL = "http://127.0.0.1:5000/api/tasks";
 
@@ -111,7 +111,6 @@ function Dashboard() {
 
       {/* Main Content */}
       <div className="notion-main">
-        {/* Top Navigation */}
         <div className="notion-navbar">
           <button 
             onClick={() => setShowSidebar(!showSidebar)} 
@@ -126,7 +125,6 @@ function Dashboard() {
             </div>
           </div>
           <div style={{ flex: 1 }}></div>
-          {/* Search */}
           <div className="notion-search">
             <input
               type="text"
@@ -144,7 +142,7 @@ function Dashboard() {
         <div className="notion-content notion-fade-in">
           <h1 className="notion-title">Tasks</h1>
           
-          {/* Error Message */}
+        
           {error && <p className="notion-error">{error}</p>}
 
           {/* Add Task */}
