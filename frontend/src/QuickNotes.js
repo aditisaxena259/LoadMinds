@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { XCircle } from "lucide-react";
-import "./QuickNotes.css"; // Import styles
+import "./QuickNotes.css";
 
 function QuickNotes({ onClose, updateQuickNotesCount }) {
   const [quickNotes, setQuickNotes] = useState([]);
 
-  // Load Quick Notes from localStorage when component mounts
+  
   useEffect(() => {
     const savedNotes = JSON.parse(localStorage.getItem("quickNotes")) || [];
     setQuickNotes(savedNotes);
   }, []);
 
-  // ✅ Add a Quick Note and instantly update count
+ 
   const addQuickNote = (e) => {
     e.preventDefault();
     const noteInput = e.target.elements.note.value.trim();
@@ -26,13 +26,12 @@ function QuickNotes({ onClose, updateQuickNotesCount }) {
     e.target.reset();
   };
 
-  // ❌ Delete a Quick Note and instantly update count
   const deleteQuickNote = (index) => {
     const newNotes = quickNotes.filter((_, i) => i !== index);
     setQuickNotes(newNotes);
     localStorage.setItem("quickNotes", JSON.stringify(newNotes));
 
-    updateQuickNotesCount(newNotes.length); // ✅ Instantly update sidebar count
+    updateQuickNotesCount(newNotes.length);
   };
 
   return (
