@@ -1,0 +1,244 @@
+/* 🔳 Main Layout */
+.notion-app {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  /* 📂 Sidebar */
+  .notion-sidebar {
+    display: flex;
+    justify-content: space-between;
+    background: #1a1a1a; /* Dark sidebar */
+    width: 250px;
+    border-right: 2px solid #333;
+    transition: width 0.3s ease-in-out;
+    overflow-y: auto;
+  }
+  .notion-menu-button
+  {
+    background-color: white;
+    color: black;
+  }
+  .notion-sidebar-content {
+    padding: 20px;
+  }
+  
+  .notion-sidebar-heading {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .notion-sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+  }
+  
+  .notion-sidebar-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .notion-sidebar-item-icon {
+    margin-right: 10px;
+  }
+  
+  /* 📌 Navbar */
+  .notion-navbar {
+    height: 50px;
+    background: #181818;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 2px solid #333;
+  }
+  
+  /* 📖 Main Content */
+  .notion-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #121212;
+    
+  }
+  
+  /* 🔍 Search Input */
+  .notion-search {
+    position: relative;
+    width: 200px;
+  }
+  
+  .notion-search-input {
+    width: 100%;
+    padding: 8px 35px;
+    background: #1e1e1e;
+    border: 1px solid #444;
+    border-radius: 6px;
+    font-size: 14px;
+    color: white;
+  }
+  
+  .notion-search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+  }
+  
+  /* 📝 Task List */
+  .notion-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .notion-task-list {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width:100%;
+
+  }
+  
+  /* 🎯 Task Item */
+  .notion-task-item {
+    display: flex;
+    align-items: center;
+    background: #1e1e1e;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    transition: background 0.3s;
+  }
+  
+  .notion-task-item:hover {
+    background: #292929;
+  }
+  
+  /* ✅ Task Checkbox */
+  .notion-task-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #888;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .notion-task-checkbox.checked {
+    background: linear-gradient(135deg, #2a3ab4, #54abc3);
+    border: none;
+    color: white;
+  }
+  
+  /* ✏️ Task Input */
+  .notion-task-text {
+    flex: 1;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .notion-task-text.completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  /* 🗑 Delete Button */
+  .notion-task-action-button {
+    background: transparent;
+    border: none;
+    color: #e74c3c;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .notion-task-action-button:hover {
+    color: #ff4d4d;
+  }
+  
+  /* ➕ Add Task */
+  .notion-add-task {
+    display: flex;
+    justify-content: space-between;
+    background: #1e1e1e;
+    padding: 10px;
+    border-radius: 8px;
+    align-items: center;
+  }
+  
+  .notion-add-task-input {
+    width: 90%;  /* ✅ Ensures it stretches */
+    margin-left: 0.5rem;
+    border:none;
+    min-width: 1000px; 
+    padding: 12px;
+    background: #1e1e1e;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .notion-add-button {
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #2a3ab4, #54abc3);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .notion-add-button:hover {
+    background: linear-gradient(135deg, #2a3ab4, #54abc3);
+    transform: scale(1.05);
+  }
+  
+  /* ⚡ Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .notion-fade-in {
+    animation: fadeIn 0.3s ease;
+  }
+  
+
+.notion-menu-button {
+    background: #1a1a1a; 
+    border: none;
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .notion-menu-button:hover {
+    background: #333; 
+  }
+  .note-count {
+    background: #1a1a1a;
+    color: white;
+    font-size: 12px;
+    padding: 3px 6px;
+    border-radius: 10px;
+    
+  }
+
+  

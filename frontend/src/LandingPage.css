@@ -1,0 +1,55 @@
+/* Global styling */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #121212; /* Black background */
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container */
+  .landing-container {
+    text-align: center;
+    max-width: 500px;
+    padding: 30px;
+    background: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Heading */
+  .landing-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  /* Subtitle */
+  .landing-subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #aaa;
+  }
+  
+  /* Chic Button */
+  .landing-button {
+    background: linear-gradient(135deg, #2a3ab4, #54abc3);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .landing-button:hover {
+    background: linear-gradient(135deg, #2a3ab4, #54abc3);
+    transform: scale(1.05);
+  }
+  

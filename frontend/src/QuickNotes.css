@@ -1,0 +1,107 @@
+/* Quick Notes Overlay */
+.quick-notes-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  /* Quick Notes Box */
+  .quick-notes-box {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+    animation: fadeIn 0.3s ease;
+  }
+  
+  /* Header */
+  .quick-notes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .quick-notes-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #bbb;
+    transition: color 0.2s;
+  }
+  
+  .quick-notes-close:hover {
+    color: white;
+  }
+  
+  /* Input Form */
+  .quick-notes-form {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .quick-notes-form input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background: #333;
+    color: white;
+  }
+  
+  .quick-notes-form button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(135deg, #2a3ab4, #54abc3);
+    color: white;
+    cursor: pointer;
+  }
+  
+  .quick-notes-form button:hover {
+    background: linear-gradient(135deg, #2a3ab4, #54abc3);
+  }
+  
+  /* Notes List */
+  .quick-notes-list {
+    margin-top: 10px;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+  
+  .quick-note {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #292929;
+    padding: 8px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+  }
+  
+  .quick-note button {
+    background: none;
+    border: none;
+    color: #ff4d4d;
+    cursor: pointer;
+  }
+  
+  .quick-note button:hover {
+    color: #ff1a1a;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  

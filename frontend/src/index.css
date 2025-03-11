@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --notion-black: #37352f;
+  --notion-gray-dark: #6b7280;
+  --notion-gray: #e5e5e5;
+  --notion-gray-light: #f1f1f1;
+  --notion-white: #ffffff;
+  --notion-blue: #2563eb;
+  --notion-blue-light: #ebf2ff;
+  --notion-hover: rgba(55, 53, 47, 0.08);
+  --notion-selection: rgba(46, 170, 220, 0.2);
+  --notion-border: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--notion-black);
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+*:focus {
+  outline: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #121212; 
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
